@@ -90,12 +90,8 @@ async def start_command(client: Client, message: Message):
         return
     else:
         reply_markup = InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton('⚡️ ᴍᴏᴠɪᴇs', url='https://t.me/+QVewP06XCPFiYWZl'),
-                    InlineKeyboardButton('🍁 sᴇʀɪᴇs', url='https://t.me/webseries_flix')
-                ]
-            ]
+            [[InlineKeyboardButton("⚡️ ᴀʙᴏᴜᴛ", callback_data="about"),
+                  InlineKeyboardButton("🍁 ᴄʟᴏsᴇ", callback_data="close")]]
         )
         await message.reply_text(
             text=START_MSG.format(
