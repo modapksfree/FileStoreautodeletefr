@@ -6,3 +6,6 @@ pymongo
 dnspython
 aiohttp
 humanize
+# --- For-Token-Verification --------- #
+shortzy
+pytz
